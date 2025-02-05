@@ -1,6 +1,9 @@
 ## Preview
 
-[**🔗Click here!**]()
+[**🔗Click here!**](https://phenomenal-piroshki-9e9c01.netlify.app/)
+
+![Screenshot_1](https://github.com/user-attachments/assets/3868900a-6cab-4f9d-8f4c-c17a53cdf0cd)
+
 
 ## Design
 
