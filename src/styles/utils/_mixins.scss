@@ -1,0 +1,31 @@
+
+@mixin custom-font-style($font-family, $weight, $size, $line-height) {
+  font-family: $font-family;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin custom-font-montserrat($weight: 400, $size, $line-height) {
+  font-family: "Montserrat", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin hover-color($color) {
+  &:hover {
+    color: $color;
+  }
+}

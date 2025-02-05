@@ -1,0 +1,35 @@
+@use '../../styles/utils/vars' as *;
+@use '../../styles/utils/mixins' as *;
+
+.productList {
+  padding: 0 30px;
+  padding-bottom: 30px;
+  background-color: $colorWhite;
+
+  &__title {
+    @include custom-font-montserrat(600, 20px, 30px);
+    margin-top: 24px;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    @include custom-font-montserrat(400, 15px, 22px);
+    margin-bottom: 20px;
+  }
+
+  &__submitBtn {
+    @include flex-center;
+    width: 121px;
+    height: 50px;
+    background-color: $colorYellow;
+    margin-top: 60px;
+
+    span {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 26px;
+      color: $colorBlack;
+    }
+  }
+}

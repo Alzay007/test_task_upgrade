@@ -1,0 +1,63 @@
+@use '../../styles/utils/vars' as *;
+@use '../../styles/utils/mixins' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorBlack;
+  padding: 29px 30px 29px 20px;
+  color: $colorWhite;
+
+  &__logo {
+    @include custom-font-montserrat(600, 26px, 22px);
+    cursor: pointer;
+
+    a {
+      color: #ffd700;
+    }
+
+    span {
+      @include custom-font-montserrat(400, 26px, 22px);
+      color: $colorWhite;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &Email {
+      @include custom-font-montserrat(400, 15px, 22px);
+    }
+  }
+
+  &__logout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    color: #fff;
+
+    &:hover {
+      color: #ffd700;
+    }
+
+    &Text {
+      @include custom-font-montserrat(400, 15px, 22px);
+    }
+  }
+}

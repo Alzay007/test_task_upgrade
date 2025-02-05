@@ -1,0 +1,53 @@
+@use '../../styles/utils/vars' as *;
+@use '../../styles/utils/mixins' as *;
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  width: 290px;
+  height: calc(100vh - 80px);
+  padding: 20px 30px;
+  overflow-y: auto;
+
+  background-color: $colorDarkGrey;
+  color: $colorWhite;
+
+  &__list {
+    @include flex-column;
+    gap: 25px;
+  }
+
+  &__item {
+    position: relative;
+    cursor: pointer;
+
+    span {
+      font-size: 15px;
+      line-height: 22px;
+      font-weight: 400;
+      transition: color 0.3s ease;
+    }
+
+    &:hover {
+      a {
+        color: $colorYellow;
+      }
+
+      &::after {
+        color: $colorYellow;
+      }
+    }
+
+    &::after {
+      content: "\276F";
+      position: absolute;
+      font-size: 16px;
+      color: $colorWhite;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: color 0.3s ease;
+    }
+  }
+}

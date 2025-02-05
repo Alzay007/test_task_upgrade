@@ -1,0 +1,18 @@
+@use './styles/main.scss' as *;
+
+html, body {
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  margin-left: 290px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 80px);
+  margin-top: 80px;
+  max-width: 1920px;
+}

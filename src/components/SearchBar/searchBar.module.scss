@@ -1,0 +1,41 @@
+@use '../../styles/utils/vars' as *;
+@use '../../styles/utils/mixins' as *;
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border: 1px solid $colorBorder;
+  border-radius: 5px;
+  padding-left: 25px;
+  margin-bottom: 30px;
+
+  &__input {
+    flex: 1;
+    background-color: transparent; 
+    color: $colorBlack;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+
+    &::placeholder {
+      color: #a0aec0;
+    }
+  }
+
+  &__button {
+    @include flex-center;
+    background: $colorYellow;
+    padding: 12px 15px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+      transform: rotate(15deg);
+    }
+  }
+}
